@@ -21,12 +21,18 @@
   <main class="container">
 
     <header class="hero-box">
-  <h1 class="page-title">
-    Contact <span class="icon">&#10022;</span>
-  </h1>
-</header>
+      <h1 class="page-title">
+        Contact <span class="icon">&#10022;</span>
+      </h1>
+    </header>
 
-    <form class="contact-form" method="post" name="contact" data-netlify="true">
+    <form class="contact-form"
+          method="post"
+          name="contact"
+          data-netlify="true"
+          action="thankyou.html">
+
+      <input type="hidden" name="form-name" value="contact">
 
       <label for="name">Name *</label>
       <input type="text" id="name" name="name" placeholder="Your name..." required>
@@ -39,7 +45,6 @@
 
       <button type="submit">Submit</button>
 
-      
     </form>
 
   </main>
@@ -51,4 +56,3 @@
 
 </body>
 </html>
-
