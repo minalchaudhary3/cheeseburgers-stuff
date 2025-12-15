@@ -1,0 +1,204 @@
+/* RESET */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* BODY */
+body {
+  background-color: #FAF7F2;
+  color: #1A1A1A;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* NAV */
+nav {
+  background-color: #FAF7F2;
+  padding: 14px 20px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1A1A1A;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #C7A27C;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+ nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+
+/* HERO — SMALLER + ANIMATION ONLY */
+.hero-box {
+  margin: 30px 0 50px;   /* 🔑 removes side stretch */
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #fce7f3,
+    #e0f2fe,
+    #f3e8ff
+  );
+
+
+  animation: expand 0.8s ease forwards;
+}
+
+/* SIMPLE, SAFE ANIMATION */
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* HERO TEXT */
+.page-title {
+  margin: 0;
+  font-size: 2.3rem;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* GOLD SPARKLE */
+.icon {
+  margin-left: 10px;
+  color: #C7A27C;
+}
+
+/* MAIN */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+/* GRID — UNTOUCHED */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.work-wide {
+  grid-column: 1 / -1;
+}
+
+/* WORK ITEMS */
+.work-item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid #E3D1C1;
+  text-decoration: none;
+}
+
+.work-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.overlay p {
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+/* HOVER */
+.work-item:hover img {
+  opacity: 0.85;
+}
+
+.work-item:hover .overlay {
+  opacity: 1;
+}
+
+/* FOOTER */
+.site-footer {
+  border-top: 1px solid #E3D1C1;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7b6f5a;
+}
+
+.site-footer p {
+  margin: 6px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-wide {
+    grid-column: auto;
+  }
+
+  .work-item img {
+    height: 240px;
+  }
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .hero-box {
+    animation: none;
+  }
+}
