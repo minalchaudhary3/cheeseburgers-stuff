@@ -1,4 +1,4 @@
-/* RESET */
+
 html {
   box-sizing: border-box;
 }
@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
 }
 
-/* BODY */
+
 body {
   background-color: #FAF7F2;
   color: #1A1A1A;
@@ -16,7 +16,7 @@ body {
   line-height: 1.6;
 }
 
-/* NAV */
+
 nav {
   background-color: #FAF7F2;
   padding: 14px 20px;
@@ -48,9 +48,9 @@ nav a:hover {
 }
 
 
-/* HERO — SMALLER + ANIMATION ONLY */
+
 .hero-box {
-  margin: 30px 0 50px;   /* 🔑 removes side stretch */
+  margin: 30px 0 50px;   
   padding: 30px 20px;
   text-align: center;
   border-radius: 14px;
@@ -66,7 +66,7 @@ nav a:hover {
   animation: expand 0.8s ease forwards;
 }
 
-/* SIMPLE, SAFE ANIMATION */
+
 @keyframes expand {
   from {
     opacity: 0;
@@ -78,7 +78,7 @@ nav a:hover {
   }
 }
 
-/* HERO TEXT */
+
 .page-title {
   margin: 0;
   font-size: 2.3rem;
@@ -90,19 +90,19 @@ nav a:hover {
   color: #444;
 }
 
-/* GOLD SPARKLE */
+
 .icon {
   margin-left: 10px;
   color: #C7A27C;
 }
 
-/* MAIN */
+
 main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px 40px;
 }
-/* GRID — UNTOUCHED */
+
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -114,7 +114,7 @@ main {
   grid-column: 1 / -1;
 }
 
-/* WORK ITEMS */
+
 .work-item {
   position: relative;
   display: block;
@@ -132,7 +132,7 @@ main {
   transition: opacity 0.3s ease;
 }
 
-/* OVERLAY */
+
 .overlay {
   position: absolute;
   inset: 0;
@@ -159,7 +159,7 @@ main {
   font-size: 0.95rem;
 }
 
-/* HOVER */
+
 .work-item:hover img {
   opacity: 0.85;
 }
@@ -168,7 +168,7 @@ main {
   opacity: 1;
 }
 
-/* FOOTER */
+
 .site-footer {
   border-top: 1px solid #E3D1C1;
   padding: 20px 10px;
@@ -181,7 +181,7 @@ main {
   margin: 6px 0;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 800px) {
   .work-grid {
     grid-template-columns: 1fr;
@@ -196,7 +196,7 @@ main {
   }
 }
 
-/* ACCESSIBILITY */
+
 @media (prefers-reduced-motion: reduce) {
   .hero-box {
     animation: none;

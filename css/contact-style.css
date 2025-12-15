@@ -14,7 +14,7 @@ body {
   line-height: 1.6;
 }
 
-/* NAV */
+
 .topnav {
   background-color: #FAF7F2;
   padding: 14px 20px;
@@ -46,7 +46,7 @@ body {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-/* HERO BOX (same as About / Work) */
+
 .hero-box {
   margin: 30px 0 40px;
   padding: 32px 20px;
@@ -61,27 +61,27 @@ body {
   animation: expand 0.8s ease forwards;
 }
 
-/* TITLE */
+
 .page-title {
   margin: 0;
   font-size: 2.2rem;
 }
 
-/* GOLD SPARKLE */
+
 .icon {
   margin-left: 8px;
   color: #C7A27C;
 }
 
 
-/* PAGE WRAP */
+
 .container {
   width: min(700px, 92%);
   margin: 0 auto;
   padding: 10px 0 40px;
 }
 
-/* CONTACT TITLE */
+
 .contact-title {
   text-align: center;
   font-size: 2rem;
@@ -89,13 +89,8 @@ body {
   animation: expand 0.8s ease forwards;
 }
 
-/* GOLD SPARKLE */
-.icon {
-  margin-left: 8px;
-  color: #C7A27C;
-}
 
-/* FORM */
+
 .contact-form {
   background: #ffffff;
   border: 1px solid #E3D1C1;
@@ -157,7 +152,7 @@ body {
   text-underline-offset: 4px;
 }
 
-/* FOOTER */
+
 .site-footer {
   border-top: 1px solid #E3D1C1;
   padding: 20px 10px;
@@ -170,7 +165,7 @@ body {
   margin: 6px 0;
 }
 
-/* ANIMATION */
+
 @keyframes expand {
   from {
     opacity: 0;
@@ -182,7 +177,7 @@ body {
   }
 }
 
-/* ACCESSIBILITY */
+
 @media (prefers-reduced-motion: reduce) {
   .contact-title {
     animation: none;

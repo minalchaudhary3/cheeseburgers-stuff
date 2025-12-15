@@ -9,7 +9,7 @@ body {
   line-height: 1.6;
 }
 
-/* NAV */
+
 .topnav {
   background-color: #FAF7F2;
   padding: 14px 20px;
@@ -42,17 +42,17 @@ body {
   text-underline-offset: 4px;
 }
 
-/* MAIN */
+
 .container {
   width: min(900px, 92%);
   margin: 0 auto;
   padding-bottom: 40px;
 }
 
-/* HERO */
+
 .hero-box {
   margin: 30px 0 22px;
-  padding: 28px 20px;     /* slightly smaller */
+  padding: 28px 20px;     
   text-align: center;
   border-radius: 14px;
   background: linear-gradient(135deg, #fce7f3, #e0f2fe, #f3e8ff);
@@ -80,7 +80,7 @@ body {
   color: #C7A27C;
 }
 
-/* PROJECT STACK */
+
 .stack {
   margin-top: 20px;
 }
@@ -110,7 +110,7 @@ body {
   color: #666;
 }
 
-/* BOTTOM NAV */
+
 .project-nav {
   margin: 34px 0 10px;
   padding-top: 18px;
@@ -122,9 +122,8 @@ body {
   gap: 12px;
 }
 
-/* slightly smaller version of home button */
 .secondary-btn {
-  padding: 8px 16px;          /* smaller */
+  padding: 8px 16px;        
   border-radius: 999px;
   background-color: #7c3aed;
   color: #FAF7F2;
@@ -137,7 +136,7 @@ body {
   background-color: #5b21b6;
 }
 
-/* simple center link */
+
 .text-link {
   color: #7b6f5a;
   text-decoration: none;
@@ -150,7 +149,7 @@ body {
   text-underline-offset: 4px;
 }
 
-/* FOOTER */
+
 .site-footer {
   border-top: 1px solid #E3D1C1;
   padding: 20px 10px;
@@ -163,7 +162,7 @@ body {
   margin: 6px 0;
 }
 
-/* MOBILE */
+
 @media (max-width: 600px) {
   .project-nav {
     justify-content: center;

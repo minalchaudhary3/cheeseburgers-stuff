@@ -10,7 +10,7 @@ body {
   line-height: 1.6;
 }
 
-/* NAV */
+
 .topnav {
   background-color: #FAF7F2;
   padding: 14px 20px;
@@ -43,13 +43,13 @@ body {
   text-underline-offset: 4px;
 }
 
-/* MAIN WRAP */
+
 .container {
   width: min(1100px, 90%);
   margin: 0 auto;
 }
 
-/* HERO */
+
 .hero {
   margin: 30px 0;
   padding: 40px 20px;
@@ -80,18 +80,18 @@ body {
   color: #444;
 }
 
-/* GOLD SPARKLE */
+
 .icon {
   margin-left: 10px;
   color: #C7A27C;
 }
 
-/* CONTENT */
+
 .content {
   margin-top: 30px;
 }
 
-/* PROFILE IMAGE */
+
 .profile {
   float: right;
   width: 340px;
@@ -111,7 +111,7 @@ body {
 }
 
 
-/* HEADINGS */
+
 h2 {
   font-size: clamp(1.6rem, 3vw, 2rem);
   margin-top: 0;
@@ -123,14 +123,14 @@ h3 {
   text-underline-offset: 8px;
 }
 
-/* DIVIDER */
+
 .divider {
   height: 1px;
   background-color: rgba(0,0,0,0.12);
   margin: 22px 0;
 }
 
-/* AREAS LIST */
+
 .areas {
   list-style: none;
   padding-left: 0;
@@ -154,7 +154,7 @@ h3 {
   text-underline-offset: 4px;
 }
 
-/* ICONS */
+
 .layout::before { content: "\25A0"; color: #C97C5D; } /* ■ */
 .photo::before  { content: "\25CF"; color: #5C7FA3; } /* ● */
 .illus::before  { content: "\25B2"; color: #8E7DBE; } /* ▲ */
@@ -167,7 +167,7 @@ h3 {
   top: 4px;
 }
 
-/* FOOTER */
+
 .site-footer {
   margin-top: 40px;
   padding: 20px 0;
@@ -176,7 +176,7 @@ h3 {
   color: #666;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 810px) {
   .profile {
     width: 260px;
